@@ -41,24 +41,23 @@ function App() {
   return (
     <>
       {/* <BrowserRouter> */}
-      <Navbar title="Text-Utils" about = "about Text-utils"  mode = {Mode} toggleMode ={toggleMode}/>
-      <Alert alert={alert}/>
-      <div className="container">
       {/* <Routes> */}
             {/* <Route exact path="/about" element={<About />}></Route> */}
             {/* <Route */}
               {/* exact path="/" */}
               {/* element={ */}
+      <Navbar title="Text-Utils" about = "about Text-utils"  mode = {Mode} toggleMode ={toggleMode}/>
+      <Alert alert={alert}/>
+      <div className="container">
                 <FormText
                   showAlert={showAlert}
                   heading="Enter Text to analyze "
-                  mode={Mode}
-                />
-              {/* } */}
-        {/* //     ></Route> */}
-        {/* // </Routes> */}
-      {/* /</BrowserRouter> */}
+                  mode={Mode}/>
       </div>
+      {/* } */}
+{/* //     ></Route> */}
+{/* // </Routes> */}
+{/* /</BrowserRouter> */}
     </>
   );
 }

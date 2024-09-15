@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 export default function FormText(props) {
   const handleClick = () => {
-    console.log('you have clicked button');
     const newText = text.toUpperCase();
     setText(newText);
     props.showAlert("convert to upper case","primary");
